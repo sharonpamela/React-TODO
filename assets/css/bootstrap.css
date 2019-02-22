@@ -6,7 +6,6 @@ Body {
     /* margin:auto; */
     margin-bottom: 60px;
 }
-
 .local-navbar{
     border-bottom: 2px solid lightgray;
     background: white; 
@@ -23,13 +22,12 @@ Body {
     margin-right: 3%;
     margin-bottom: 1%;
 }
-
 .local-main-container{
     box-sizing: border-box;
     background: white;
     color: #777;   
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 35px;
+    margin-bottom: 100px;
     padding:3%;
     line-height: 1.6em;
 }
@@ -42,7 +40,6 @@ Body {
     margin-bottom: 1%;
     font-size: 16pt;
 }
-
 #local-brand{
     display: flex;
     background-color:teal;
@@ -51,7 +48,6 @@ Body {
     justify-content: center; /*Display name in the middle of header container */
     align-items: center;
 }
-
 .local-form {
     display: flex;
     flex-direction: column;
@@ -59,24 +55,10 @@ Body {
     color: #777;
     font-size: 10pt;
 }
-
-/* .local-footer{
-    flex-shrink: 0; 
-    background:#333;
-    color: #fff;
-    height: 50px;
-    font-size: 8pt;
-    text-align: center;
-    justify-content: center;
-    padding:20px;
-    border-top: 5px solid teal;
- } */
-
 html {
   min-height: 100%;
   position: relative;
-  }
-
+}
 #footer {
     bottom: 0;
     width: 100%;
@@ -91,4 +73,4 @@ html {
 }
 .footer-block {
     margin: 20px 0;
-  }
+}
