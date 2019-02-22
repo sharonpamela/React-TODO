@@ -1,0 +1,140 @@
+Body {
+    font-family:'Roboto', sans-serif, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    background-image: url("../images/bg.png");
+    width:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    font: 10pt;
+}
+.navbar{
+    background:white;
+    color: white;
+    font-size: 1em;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+    box-sizing: border-box; /* without this, the nav bar border overflows the header*/
+}
+.navbarElems{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;   */
+    /* width:80%; this is making content occupy width of 80% of displayed area */
+    margin:auto; /*this is automatically aligning the 80% of the content in the center */
+}
+.main-header{
+    display: flex;
+    background-color:teal;
+    width:100%;
+    height: 50px;
+    justify-content: center; /*Display name in the middle of header container */
+    align-items: center;
+    /* padding: 0px 8px; */
+}
+.navbarButtons{
+    /* display: flex;
+    flex-direction: row; */
+    width: 40%;
+    /* justify-content: space-between; */
+    /* align-items: center;   */
+    height: 50px;
+}
+.navbarButtons ul{
+    /* display:flex; */
+    list-style-type: none;
+}
+.navbarButtons li{
+    display:inline;
+    box-sizing: border-box;
+    border-right:  2px dotted lightgray; /*need to make the border half the size */
+    padding: 0px 16px;
+}
+/*remove the border to the right of "Contact" and remove padding to make content even with body */
+.navbarButtons #contact {
+    border-right: 2px solid transparent;
+    padding-right: 0px;
+}
+.navbarButtons a{
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;   
+}
+.main{
+    width:80%;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+	overflow:hidden;
+    box-sizing: border-box;
+    background: white;
+    color: #777;   
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin:auto;
+    /* padding:3%; */
+    line-height: 1.6em;
+}
+.main #aboutMe{
+    color: teal;
+    border-bottom: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1px;
+    padding-bottom:1%;
+    font-size: 16pt;
+}
+.main p{
+    margin-bottom: 20px;
+}
+.main div{
+    margin-bottom: 20px;
+}
+.portrait {
+    float: left;
+    padding-right: 2%;
+    padding-top: 1%;
+    width: 100px;
+    height: 100px; 
+}
+.projectImages{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.projectImages > div > img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+.projectImages > div {
+    flex: 1 1 150px;
+}
+/*trick to make wrapper function with stickly footer via flexbox */
+/* html, body {
+    height: 100%;
+} */
+#form {
+    display: flex;
+    flex-direction: column;
+    font-family:'Roboto', sans-serif, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    font-size: 10pt;
+}
+#button{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 10%;
+    min-width:40px;
+}
+footer{
+   /* flex-shrink: 0; prevent the dimensions of the footer from shrinking with page re-sizing */
+   /* display: flex; */
+   background:#333;
+   color: #fff;
+   height: 50px;
+   /* align-items: center; */
+   justify-content: center;
+   padding:20px;
+   border-top: 5px solid teal;
+}
