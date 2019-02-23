@@ -59,7 +59,7 @@ html {
   min-height: 100%;
   position: relative;
 }
-#footer {
+.myFooter {
     bottom: 0;
     width: 100%;
     position: absolute;
@@ -70,6 +70,7 @@ html {
     color: #fff;
     text-align: center;
     padding:20px;
+    font-size: 5px;
 }
 .footer-block {
     margin: 20px 0;
